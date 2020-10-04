@@ -1,6 +1,6 @@
-<h1><center>GitHub Status App</center></h1>
+<h1 align="center">GitHub Status App</h1>
 
-<center>Solution for app from <a href='https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/GitHub-Status-App.md'>App ideas</a></center>
+<p align="center">Solution for app from <a href='https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/GitHub-Status-App.md'>App ideas</a></p>
 
 ------
 
