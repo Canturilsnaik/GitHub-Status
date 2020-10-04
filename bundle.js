@@ -39817,14 +39817,15 @@ function extend() {
 },{}],245:[function(require,module,exports){
 const request = require('request'),
 			$name = document.querySelectorAll('.status__name'),
-			$description = document.querySelectorAll('.description');
+			$description = document.querySelectorAll('.description'),
+			$btn = document.querySelector('.btn');
 
 
 
 function updateResults(){
 	request('https://www.githubstatus.com/',  { json: true }, (err, res, body) => {  
 		let results = body.components;
-		results = results.filter((value) => value.status === 'operational')  
+		results = results.filter((value) => value.status === 'operational') // o metodo filter cria um novo array, filtrando os valores com 
 		for(let i = 0; i < $name.length; i++){
 			const div = $name[i];
 			const result = results.filter((value) => value.name === div.textContent);
@@ -39838,6 +39839,10 @@ function updateResults(){
 		}
 });
 }
+
+$btn.addEventListener('click', () => {
+	updateResults();
+})
 
 updateResults();
 

@@ -1,6 +1,7 @@
 const request = require('request'),
 			$name = document.querySelectorAll('.status__name'),
-			$description = document.querySelectorAll('.description');
+			$description = document.querySelectorAll('.description'),
+			$btn = document.querySelector('.btn');
 
 
 
@@ -21,5 +22,9 @@ function updateResults(){
 		}
 });
 }
+
+$btn.addEventListener('click', () => {
+	updateResults();
+})
 
 updateResults();
