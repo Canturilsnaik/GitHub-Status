@@ -2,7 +2,7 @@
 
 <p align="center">Solution for app from <a href='https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/GitHub-Status-App.md'>App ideas</a></p>
 
-------
+
 
 <p align="center">
   <a href="#computer-used-technologies">
