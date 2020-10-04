@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main{
+  background: #f0f0f0;
+  width: 60vw;
+}
+
+.main__status {
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  margin: 10px 0 10px;
+}
+
+.description {
+  height: 3vh;
+}
+
+.operational{
+  background: #28a745;
+}
+
+.broken{
+  background: #e63946;
+}
